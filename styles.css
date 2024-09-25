@@ -38,52 +38,55 @@ h1 {
     font-size: 46px;
 }
 
-#joke-container {
-    height: 40%;
-    width: 100%;
-}
-
-#buttons button {
+.btn {
     font-size: 16px;
     font-weight: 600;
     border: 1px solid rgb(39, 39, 39);
     padding: 8px 10px;
     border-radius: 14px;
     cursor: pointer;
+    box-shadow: 0 4px #615e5e;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+  
+.btn:active {
+    transform: scale(0.95);
+    box-shadow: 0 2px #454343;
 }
 
-#any:hover {
+#any {
     background-color: rgb(92, 92, 135);
     color: rgb(213, 212, 211);
 }
 
-#misc:hover {
+#misc {
     background-color: rgb(151, 207, 76);
 }
 
-#programming:hover {
+#programming {
     background-color: rgb(244, 66, 66);
     color: rgb(213, 212, 211);
 }
 
-#dark:hover {
+#dark {
     background-color: rgb(245, 129, 71);
 }
 
-#pun:hover {
+#pun {
     background-color: rgb(224, 227, 85);
 }
 
-#spooky:hover {
+#spooky {
     background-color: rgb(244, 118, 185);
 }
 
-#christmas:hover {
+#christmas {
     background-color: rgb(28, 157, 138);
 }
 
 #joke-container {
-    width: 70%;
+    width: 100%;
+    height: 40%;
 }
 
 #joke-container p {
@@ -94,4 +97,22 @@ h1 {
 .single {
     font-weight: 800;
     font-size: 24px;
+}
+
+@media screen and (max-width: 426px) {
+    #container {
+        width: 80%;
+    }
+
+    h1 {
+        font-size: 38px;
+    }
+     h2 {
+        font-size: 20px;
+    }
+
+    .btn {
+        font-size: 15px;
+    }
+    
 }
